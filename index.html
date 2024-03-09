@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal-portfolio</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- search bar  -->
+    <div class="search-bar">
+      <!-- menu  -->
+      <div class="menu-bar">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <input type="text" placeholder="Search" class="search-input">
+      <button class="search-btn" type="submit">Search</button>
+      <!-- Light/Dark mode  -->
+      <div>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </div>
+    <!-- NavBar -->
+    <div class="nav-bar">
+      <div class="image-icon">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.jpg" class="image">
+      </div>
+      <div class="name">
+        KAMAL JOSHI
+      </div>
+      <div class="navbar-nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Projects</div>
+        <div class="nav-item">Skills</div>
+        <div class="nav-item">Contact us</div>
+      </div>
+      <div>
+        <a href="documents/Kamal_Joshi.pdf" download="documents/Kamal_Joshi.pdf">
+          <button class="download-btn">Download Resume</button>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- slide-bar -->
+    <!-- <div class="slide-bar">
+      <img src="images/programming-languages/bootstrap.jpg" alt="Image1">
+      <img src="images/programming-languages/c.png" alt="Image2">
+      <img src="images/programming-languages/c++.png" alt="Image3">
+    </div> -->
+
+    <!-- about section  -->
+    <div class="about-section">
+      <div class="images-section">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
+        <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
+      </div>
+      <div class="description-section">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam.</h2>
+        <p id="textbtn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maiores eius unde sit,
+          autem a fugit
+          doloribus tempora eos error veritatis, voluptate quam. Cupiditate debitis veritatis quia alias rem quae esse
+          hic exercitationem? Labore soluta assumenda, veniam dolorem eius dolore!</p>
+        <button id="speakbtn" onclick="speak()"><img src="images/volume.png" alt="img.png" class="speaker"></button>
+      </div>
+    </div>
+
+    <!-- projects  -->
+    <div class="projects-main-div">
+      <div class="project-heading">
+        <h1>PROJECTS</h1>
+      </div>
+      <div class="projects-row">
+        <div class="arrow-left">
+          <img src="images/left-arrow.webp" alt="left-arrow" class="arrow">
+        </div>
+        <div class="projects">
+          <div id="project">
+            <h1>Title1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur est rerum perspiciatis deserunt
+              architecto quisquam asperiores ipsum harum modi.</p>
+          </div>
+          <div id="project">
+            <h1>Title2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur est rerum perspiciatis deserunt
+              architecto quisquam asperiores ipsum harum modi.</p>
+          </div>
+          <div id="project">
+            <h1>Title3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aspernatur est rerum perspiciatis deserunt
+              architecto quisquam asperiores ipsum harum modi.</p>
+          </div>
+        </div>
+        <div class="arrow-right">
+          <img src="images/right-arrow.webp" alt="right-arrow" class="arrow">
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills  -->
+    <div class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Ruby</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Web Technologies</h3>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Databases</h3>
+          <ul>
+            <li>SQLite3</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Frameworks and Libraries</h3>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>React Native</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-item">
+          <h3>Tools and Technologies</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code & Sublime</li>
+            <li>Postman</li>
+            <li>Mac, Linux, Windows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contact-us">
+      <div class="contact-me">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="email">
+        <div><img src="images/email.png" alt="email icon" class="contact-icon"></div>
+        <div><a href="mailto:kamaljoshi673243@gmail.com"
+            style="color: inherit; text-decoration: none;">kamaljoshi673243@gmail.com</a></div>
+      </div>
+      <div class="phone">
+        <a href="tel:+917579457073" style="color: inherit; text-decoration: none;">
+          <img src="images/phone.png" alt="phone" class="contact-icon">
+          +91 7579457073
+        </a>
+      </div>
+      <div class="location">
+        <a href="https://maps.app.goo.gl/tdwPX8WtcJe62XS88" style="color: inherit; text-decoration: none;"
+          target="_blank">
+          <img src="images/location.png" alt="location" class="contact-icon">
+          Noida, sector 63, Delhi, 201301
+        </a>
+      </div>
+    </div>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/kamal-chandra-joshi-b7483324b/"><img src="images/linkedin.png"
+          alt="github.jpg" class="social-media-icon"></a>
+      <a href="https://github.com/kamaljoshi7465"><img src="images/github.png" alt="github.jpg"
+          class="social-media-icon"></a>
+      <a href="https://www.instagram.com/kamal_joshi07?igsh=MTE3dG1udWhsbDRxag=="><img src="images/instagram.png"
+          alt="instagram.jpg" class="social-media-icon"></a>
+      <a href="https://www.facebook.com/profile.php?id=100026622543720"><img src="images/facebook.png"
+          alt="facebook.jpg" class="social-media-icon"></a>
+    </div>
+    <div class="copy-right">
+      <marquee behavior="scroll" direction="left">
+        Designed by - Kamal Joshi, Ruby on Rails developer. Add:. Noida sector 63(Delhi) 201301, Permanent Add:.
+        vill-Mathiyabanj,
+        Post-Budam, Distt-Champawat(UK), Pin-262523
+      </marquee>
+    </div>
+  </footer>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
