@@ -85,7 +85,7 @@ body {
   padding: 0% 5% 0% 20%;
 }
 
-.nav-item {
+.name, .nav-item {
   height: 40px;
   width: 150px;
   display: flex;
@@ -96,7 +96,7 @@ body {
   cursor: pointer;
 }
 
-.nav-item:hover {
+.name:hover, .nav-item:hover {
   color: rgb(0, 0, 0);
   transform: scale(1.5);
   filter: drop-shadow(10px 7px 10px black);
@@ -266,7 +266,7 @@ body.dark h1, body.dark .support a {color: #fff;}
   text-align: center;
   padding: 0px 40px 0px 40px;
 }
-.arrow{
+#right-arrow, #left-arrow{
   height: 100px;
   width: 60px;
 }
