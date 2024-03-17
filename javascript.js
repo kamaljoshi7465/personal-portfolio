@@ -11,6 +11,12 @@ function speak() {
   synth.speak(utterance);
 }
 
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 
 function searchAndScroll() {
   const searchQuery = document.getElementById('searchInput').value.toLowerCase();
