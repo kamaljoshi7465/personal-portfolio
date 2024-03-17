@@ -20,8 +20,11 @@
           <span></span>
         </div>
       </div>
-      <input type="text" placeholder="Search" class="search-input">
-      <button class="search-btn" type="submit">Search</button>
+      <!-- search bar  -->
+      <input type="text" placeholder="Search" class="search-input" id="searchInput"
+        oninput="showSuggestions(this.value)">
+      <button class="search-btn" type="submit" onclick="searchAndScroll()">Search</button>
+
       <!-- Light/Dark mode  -->
       <div>
         <input type="checkbox" class="checkbox" id="checkbox">
@@ -32,20 +35,21 @@
         </label>
       </div>
     </div>
+    <div id="suggestionsContainer" class="suggestions-container"></div>
     <!-- NavBar -->
     <div class="nav-bar">
       <div class="image-icon">
-        <img src="images/mf-avatar.svg" alt="img.jpg" class="image">
+        <img src="images/DP.jpeg" alt="img.jpg" class="image">
       </div>
       <div class="name">
         KAMAL JOSHI
       </div>
       <div class="navbar-nav">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">About</div>
-        <div class="nav-item">Projects</div>
-        <div class="nav-item">Skills</div>
-        <div class="nav-item">Contact us</div>
+        <div class="nav-item" onclick="scrollToSection('home')">Home</div>
+        <div class="nav-item" onclick="scrollToSection('about')">About</div>
+        <div class="nav-item" onclick="scrollToSection('projects')">Projects</div>
+        <div class="nav-item" onclick="scrollToSection('skills')">Skills</div>
+        <div class="nav-item" onclick="scrollToSection('contact-us')">Contact us</div>
       </div>
       <div>
         <a href="documents/Kamal_Joshi.pdf" target="_blank">
@@ -62,8 +66,19 @@
       <img src="images/programming-languages/c++.png" alt="Image3">
     </div> -->
 
+    <!-- home page  -->
+    <div class="home-page" id="home">
+      <div class="main-heading">
+        <h1>Ruby on Rails Developer (Backend Developer)</h1>
+        <p>I design and code beautifully simple things, and I love what I do.</p>
+      </div>
+      <div class="home-page-image">
+        <img src="images/mf-avatar.svg" alt="">
+      </div>
+    </div>
+
     <!-- about section  -->
-    <div class="about-section">
+    <div class="about-section" id="about">
       <div class="images-section">
         <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
         <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
@@ -72,17 +87,27 @@
         <img src="images/IMG_20230713_162622.jpg" alt="img.png" id="gallery">
       </div>
       <div class="description-section">
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam.</h2>
-        <p id="textbtn">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam maiores eius unde sit,
-          autem a fugit
-          doloribus tempora eos error veritatis, voluptate quam. Cupiditate debitis veritatis quia alias rem quae esse
-          hic exercitationem? Labore soluta assumenda, veniam dolorem eius dolore!</p>
+        <h2>About Me: "Crafting the Future of Web Applications - My Journey with Ruby on Rails".</h2>
+        <p id="textbtn">&nbsp;&nbsp;&nbsp;&nbsp; Hello, My name is <i>Kamal
+            Joshi</i>, I am a
+          Back-end(Ruby on Rails) developer, and i'm very passionate and dedicated to my work. 2+
+          years of Experience in Ruby on Rails(ROR) with a passion for creating
+          robust and efficient
+          web applications.
+          Seeking opportunities to leverage my expertise in Ruby on Rails development to contribute to innovative
+          projects
+          and collaborate with talented teams.</br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Over the past, I have owned my skills in developing back-end functionality, crafting
+          clean and maintainable
+          code, and optimizing databases queries for enhanced performance. I am well-versed in MVC
+          (Model-Viewcontroller)architecture, which allows me to maintain a separation of concerns and ensures a
+          structured and organized code-base.!</p>
         <button id="speakbtn" onclick="speak()"><img src="images/volume.png" alt="img.png" class="speaker"></button>
       </div>
     </div>
 
     <!-- projects  -->
-    <div class="projects-main-div">
+    <div class="projects-main-div" id="projects">
       <div class="project-heading">
         <h1>PROJECTS</h1>
       </div>
@@ -114,7 +139,7 @@
     </div>
 
     <!-- Skills  -->
-    <div class="skills-section">
+    <div class="skills-section" id="skills">
       <h2>Skills</h2>
       <div class="skills-container">
         <div class="skill-item">
@@ -161,7 +186,7 @@
     </div>
   </main>
   <footer>
-    <div class="contact-us">
+    <div class="contact-us" id="contact-us">
       <div class="contact-me">
         <h1>Contact Me</h1>
       </div>

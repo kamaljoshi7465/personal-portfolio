@@ -108,10 +108,21 @@ body {
   width: 50px;
   border: 2px solid black;
   margin-left: 60px;
+  transition: all ease 0.5s;
+}
+.image:hover{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  border: 2px solid black;
 }
 
 .image-icon {
   width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
@@ -119,7 +130,6 @@ body {
   color: black;
   font-weight: 900;
   font-size: xx-large;
-  margin-left: 50px;
 }
 
 .email,
@@ -357,11 +367,53 @@ p{
   }
 }
 
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+  padding: 20px;
+  margin-top: 7%;
+}
+.main-heading h1 {
+  margin: 0.5em 0;
+  font-size: 2em; 
+}
+.main-heading p {
+  margin: 0.5em 0;
+  /* color: #666; */
+  color: white;
+}
+.home-page-image img {
+  margin-top: 15%;
+  max-width: 100%; 
+  height: auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-heading h1 {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 768px) {
+  .home-page {
+    flex-direction: column;
+  }
+  .main-heading h1 {
+    font-size: 1.5em;
+  }
+  .main-heading p {
+    font-size: 1em;
+  }
+}
+
+
 .about-section{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10%;
+  padding: 5% 10% 10% 10%;
 }
 .description-section{
   /* margin-top: 40%;
@@ -403,4 +455,30 @@ p{
   cursor: pointer;
   scale: 1.2;
   box-shadow: 0px 0px 30px rgb(102, 196, 234);
+}
+
+#textbtn{
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.suggestions-container {
+  position: absolute;
+  z-index: 1000;
+  background: rgb(95, 93, 93);
+  width: auto;
+  color: white;
+  border-radius: 5px;
+  margin-left: 150px;
+}
+.suggestions-container div {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestions-container div:hover {
+  background-color: #f2f2f2;
+  color: black;
+  border-radius: 5px;
 }
