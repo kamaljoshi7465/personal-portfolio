@@ -238,7 +238,7 @@ body.dark h1, body.dark .support a {color: #fff;}
   transform: translateX(24px);
 }
 
-
+/* Project Section  */
 .projects-main-div{
   height: 600px;
 }
@@ -481,4 +481,26 @@ p{
   background-color: #f2f2f2;
   color: black;
   border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#backToTopBtn {
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  font-size: 30px; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(36, 30, 30); 
+  color: white; 
+  cursor: pointer; 
+  height: 6%; 
+  width: 3%; 
+  border-radius: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 0.5s;
 }
